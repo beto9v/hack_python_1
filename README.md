@@ -1,105 +1,83 @@
-# SOCIAL OPLESK
-### 🏴‍☠️ HACKS 
+# 🐍 Hack Python 1
 
-<br/>
+Repositorio con la resolución de **10 ejercicios (hacks) de Python** orientados a practicar conceptos básicos del lenguaje: manipulación de strings, listas y bucles.
 
-📚 tutoriales de python [tutorial 1](https://docs.python.org/es/3/tutorial/) | [tutorial 2](https://www.w3schools.com/python/)
 ---
 
-```diff
-- NOTA HACER LAS PRÁCTICAS MEDIANTE VISUAL STUDIO CODE  
+## 📋 Sobre el proyecto
+
+Cada hack es una pequeña función que debe transformar una entrada en una salida específica. Todas las funciones se validan automáticamente con **pytest** mediante el archivo `test_hack.py`.
+
+---
+
+## 🛠️ Tecnologías
+
+- **Python 3.14**
+- **pytest** (para la validación de los ejercicios)
+
+---
+
+## 📂 Estructura del proyecto
+
+hack_python_1/
+├── hack_1.py          # Hack 1 - Función base
+├── hack_2.py          # Hack 2 - Convertir a minúsculas
+├── hack_3.py          # Hack 3 - Capitalizar primera letra
+├── hack_4.py          # Hack 4 - Última letra en mayúscula
+├── hack_5.py          # Hack 5 - Estilo "leet speak"
+├── hack_6.py          # Hack 6 - Lista [0..5] con for
+├── hack_7.py          # Hack 7 - Lista [5..0] con while
+├── hack_8.py          # Hack 8 - Slicing de listas
+├── hack_9.py          # Hack 9 - Intercalar elementos
+├── hack_10.py         # Hack 10 - String a lista de caracteres
+├── test_hack.py       # Tests con pytest
+└── requirements.txt   # Dependencias del proyecto
+
+---
+
+## 🚀 Cómo ejecutar los tests
+
+**1. Clonar el repositorio:**
+```bash
+git clone https://github.com/beto9v/hack_python_1.git
+cd hack_python_1
 ```
 
-```diff
-* 1) Tienes que clonar el repositorio 
-  git clone https://github.com/SocialOplesk/hack_python_1.git
-  
-* 2) Instalar los paquetes
-  pip install -r requirements.txt
-
-* 3) Para validar los hacks
-  pytest test_hack.py -v (ejecuta todos los test)
-  pytest test_hack.py::test_hack_1 (ejecuta un test en específico)
-  pytest test_hack.py::test_hack_3 -v (ejecuta un test en específico)
-
-  ✔ NOTA: en caso de no reconocer el comando "pytest"
-          ejecutar el pytest así: python -m pytest test_hack.py -v
-       
-```
-#### 🎬 Clonar Repo + Instalar requirements
-![](https://github.com/SocialOplesk/hack_python_1/blob/main/gifs/hack_python_1_install.gif)
-
-<br/>
-
-|Hacks | Details | 
-|----------|---------|
-| H-1      | "FOOZIMAN"|
-| H-2      | "fooziman" |
-| H-3      | "Fooziman" | 
-| H-4      | "foozimaN" |
-| H-5      | "f00z1m@n" |
-| H-6      | [0,1,2,3,4,5] |
-| H-7      | [5,4,3,2,1,0] | 
-| H-8      | [3,5,7] |
-| H-9      | [1,'@',2,'@',3,'@'] |
-| H-10      | ["F","0","0","Z","1","M","@","N"] | 
-<br/> 
-
-## 🏆 H-1
-🎬 Cómo resolver el hack y adicional ejecutar el testing, para validar el hack.
-
-![](https://github.com/SocialOplesk/hack_python_1/blob/main/gifs/hack_python_1_run.gif)
-```sh
-text: "fooziman" output => "FOOZIMAN"
+**2. Instalar dependencias:**
+```bash
+pip install -r requirements.txt
 ```
 
-## 🏆 H-2
-```sh
-text: "FOOZIMAN" output => "fooziman"
+**3. Ejecutar todos los tests:**
+```bash
+python -m pytest test_hack.py -v
 ```
 
-## 🏆 H-3
-```sh
-text: "fooziman" output => "Fooziman"
+**Ejecutar un test específico:**
+```bash
+python -m pytest test_hack.py::test_hack_1 -v
 ```
 
-## 🏆 H-4
-```sh
-text: "fooziman" output => "foozimaN"
-```
+---
 
-## 🏆 H-5
-```sh
-text: "fooziman" output => "f00z1m@n"
-```
+## 🧠 Conceptos practicados
 
-## 🏆 H-6 (FOR)
-```sh
-loop: for [] output => [0,1,2,3,4,5]
-```
-<br/>
+- ✅ Métodos de strings: `.lower()`, `.upper()`, `.capitalize()`, `.replace()`
+- ✅ Slicing de strings y listas
+- ✅ Concatenación de strings
+- ✅ Listas y método `.append()`
+- ✅ Bucles `for` con `range()`
+- ✅ Bucles `while` con condiciones
+- ✅ Función `len()` y acceso por índice
+- ✅ Conversión `list(string)`
 
-## 🏆 H-7 (WHILE)
-```sh
-loop: while [] output => [5,4,3,2,1,0]
-```
-<br/>
+---
 
-## 🏆 H-8
-```sh
-list: [1,3,5,7,9] output => [3,5,7]
-```
-<br/>
+## 👤 Autor
 
-## 🏆 H-9 (WHILE)
-```sh
-loop: while [1,2,3] ouput => [1,'@',2,'@',3,'@']
-```
-<br/>
+**Alberto Vargas**
+- GitHub: [@beto9v](https://github.com/beto9v)
 
-## 🏆 H-10
-```sh
-text: "fooziman" output => ["F","0","0","Z","1","M","@","N"]  
-```
-<br/>
+---
 
+⭐ Si te resulta útil, no olvides dar una estrella al repo.
