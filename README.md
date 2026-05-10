@@ -1,4 +1,4 @@
-# Hack Python 1
+# 🐍 Hack Python 1
 
 Repositorio con la resolución de **10 ejercicios (hacks) de Python** orientados a practicar conceptos básicos del lenguaje: manipulación de strings, listas y bucles.
 
